@@ -179,10 +179,10 @@ footer a {
     color: fuchsia;
 }
 
-@media screen and (max-width: 576px){
 
-    
-   
+
+
+@media screen and (max-width: 576px){ 
     
 }
 
@@ -198,9 +198,67 @@ table{
 
 @media screen and (max-width: 1200px){
 
-table{
-    margin-left: auto;
-    margin-right: auto; 
-    width: 80%; }
-      
+    table{
+     margin-left: auto;
+     margin-right: auto; 
+     width: 80%; }
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em; 
+        text-align: left; 
+
+    }
+
+
+    header div {
+        display: flex;
+        
+        align-items: flex-start;
+    }
+
+    header div p {
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav li {
+        margin-left: 20px;
+    }
+
+    header nav li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    header nav li a:hover {
+        color: red;
+    }
+
+    header nav li a::before {
+        content: "\22c6\0020";
+    }
+
+    aside
+    {
+        display: flex;
+        
+    }
+
+    aside div{
+        display: flex;
+    }
 }
+
+      
